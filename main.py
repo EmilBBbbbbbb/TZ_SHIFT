@@ -24,7 +24,7 @@ def main(start_date, end_date):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Weather ETL pipeline")
-    parser.add_argument('--start_date', required=True, help="Start date in YYYY-MM-DD format")
-    parser.add_argument('--end_date', required=True, help="End date in YYYY-MM-DD format")
+    parser.add_argument('--start_date', default='2025-05-16', help="Start date in YYYY-MM-DD format")
+    parser.add_argument('--end_date', default='2025-05-30', help="End date in YYYY-MM-DD format")
     args = parser.parse_args()
     main(args.start_date, args.end_date)

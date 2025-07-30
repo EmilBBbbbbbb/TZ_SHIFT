@@ -1,6 +1,7 @@
 import pandas as pd
 from sqlalchemy import create_engine
 import loguru
+import os
 
 # Сохранение в csv
 def save_to_csv(df: pd.DataFrame, filename: str):
